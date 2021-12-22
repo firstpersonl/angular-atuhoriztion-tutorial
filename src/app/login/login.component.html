@@ -1,0 +1,34 @@
+<form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()" style="background-color: transparent;">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Login Form</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <button mat-raised-button color="primary" type="button" (click)="loginWithGithub()" class="block-btn">LOG IN WITH GITHUB</button>
+      </div>
+      <div class="row" style="justify-content: center;">
+        <small style="font-size: 10px;">OR</small>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>UserName</mat-label>
+            <input matInput placeholder="Input username" formControlName="username">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Input Password" formControlName="password">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="flex-line-button">
+      <button mat-raised-button color="primary" type="submit" class="block-btn">LOGIN</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

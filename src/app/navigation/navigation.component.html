@@ -1,0 +1,21 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-mini-fab color="base" aria-label="ANGULAR_AUTHORIZATION_TUTORIAL">
+        <mat-icon>snowing</mat-icon>
+      </button>
+      <a mat-button routerLink="/home">HOME</a>
+      <a mat-button routerLink="./user">USER</a>
+      <a mat-button routerLink="/login">LOGIN</a>
+
+      <span class="flex-spacer"></span>
+
+      <button mat-icon-button (click)="logout()" *ngIf="auth.user">
+        <mat-icon>logout</mat-icon>
+      </button>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

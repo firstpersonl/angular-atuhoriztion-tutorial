@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-header>
+        LOGIN USER IFNO
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+            <mat-label>username</mat-label>
+            <input matInput placeholder="Ex. Pizza" [value]="this.auth.user.username" readonly>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>token</mat-label>
+            <input matInput placeholder="Ex. Pizza" [value]="this.auth.user.token" readonly>
+          </mat-form-field>
+
+    </mat-card-content>
+</mat-card>
